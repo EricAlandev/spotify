@@ -30,7 +30,7 @@ const Header = () => {
                 <button className="max-w-[100px] max-h-[40px] bg-[white] border-2 px-3 rounded-[20px]
                  text-[13px] text-[black] font-[Inter] font-bold">Abrir o app</button>
 
-                    <img src="/assets/mobile/HamburguerMenu.png" alt="" 
+                    <img src="/spotify/assets/mobile/HamburguerMenu.png" alt="" 
                     className="max-h-[36.5px]"
                     onClick={toggle}
                     />
@@ -49,7 +49,7 @@ const Header = () => {
                             <section className="flex justify-end"
                              onClick={toggle}
                             >
-                                <img src="/assets/mobile/X.png" alt=""
+                                <img src="/spotify/assets/mobile/X.png" alt=""
                                 className="max-w-[50px] max-h-[50px]"
                                 />
                             </section>

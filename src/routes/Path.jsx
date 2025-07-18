@@ -5,30 +5,25 @@ import HomePage from "../pages/HomePage";
 import LayPadrao from "../styles/LayPadrão";
 import ScrollTop from "../componentes/scroll/ScrollTop";
 
-const Path = () =>{
+const Path = () => {
+  return (
+    <BrowserRouter basename="/spotify">
+      <ScrollTop />
+      <Routes>
+        <Route path="/" element={<LayPadrao />}>
+          <Route index element={<HomePage />} />
+        </Route>
 
-    return(
-        <BrowserRouter>
-        <ScrollTop />
+        <Route path="/musica/:id" element={<LayPadrao />}>
+          <Route index element={<EsqueletoMusic />} />
+        </Route>
 
-            <Routes>
-                <Route path="/" element={<LayPadrao/>} >
-                    <Route index element={<HomePage/>} /> 
-                </Route>
-
-                <Route path="/musica/:id" element={<LayPadrao/>} >
-                    <Route index element={<EsqueletoMusic/>} /> 
-                </Route>
-
-                <Route path="/artista/:id" element={<LayPadrao/>} >
-                    <Route index element={<ArtisaEsqueleto/>} /> 
-                </Route>
-
-                
-
-            </Routes>
-        </BrowserRouter>
-    )
-}
+        <Route path="/artista/:id" element={<LayPadrao />}>
+          <Route index element={<ArtisaEsqueleto />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
+};
 
 export default Path;

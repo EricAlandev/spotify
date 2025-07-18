@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 
 const PopUp = () => {
@@ -16,7 +15,7 @@ const PopUp = () => {
             <section className="flex justify-between items-center mb-4">
               <section className="flex items-center gap-1.5">
                 <img
-                    src="/assets/mobile/LogoMobileVerde.png"
+                    src="/spotify/assets/mobile/LogoMobileVerde.png"
                     alt="Logo"
                     className="max-w-[50px] max-h-[30px]"
                 />
@@ -25,7 +24,7 @@ const PopUp = () => {
               </section>
 
               <img
-                src="/assets/mobile/X.png"
+                src="/spotify/assets/mobile/X.png"
                 alt="Fechar"
                 className="max-w-[30px] max-h-[30px] cursor-pointer"
                 onClick={toggle}

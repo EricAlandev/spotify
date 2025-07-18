@@ -1,5 +1,5 @@
 import { Link, useParams } from 'react-router-dom';
-import EmAlta from '../../musicas/EmAlta.json'
+import EmAlta from '../../musicas/EmAlta.json';
 import Recomendados from '../compo-main/recomendado';
 import { useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -10,7 +10,7 @@ const EsqueletoMusic = () => {
 
   const [coracao, setCoracao] = useState(false);
   const [setting, setSetting] = useState(false);
-  const [tocando, setTocando] = useState(false); // Estado para controle do player
+  const [tocando, setTocando] = useState(false);
 
   const toggle = () => setCoracao(!coracao);
   const toggle2 = () => setSetting(!setting);
@@ -40,7 +40,6 @@ const EsqueletoMusic = () => {
     <main>
       <section>
         <div>
-          {/* Hero */}
           <section
             className="pt-[80px] pb-4"
             style={{ background: `linear-gradient(to bottom, ${musica.cor}, #1A1717)` }}
@@ -53,7 +52,6 @@ const EsqueletoMusic = () => {
               {musica.titulo}
             </h1>
 
-            {/* imagem + Cantor Nome */}
             <section className="flex items-center gap-2.5 ml-4">
               <img
                 src={musica.imageBanda}
@@ -65,7 +63,6 @@ const EsqueletoMusic = () => {
               </h3>
             </section>
 
-            {/* tempo de música + ano da música */}
             <section className="flex gap-0.5 items-center mt-1 ml-4">
               <h3 className="font-[Montserrat] text-[gray] text-[12px]">{musica.titulo}</h3>
               <p className="text-[gray]">.</p>
@@ -74,13 +71,11 @@ const EsqueletoMusic = () => {
               <h3 className="font-[Montserrat] text-[gray] text-[12px]">{musica.tempo}</h3>
             </section>
 
-            {/* Ícones + player */}
             <section className="flex items-center justify-between mt-1">
-              {/* Icones */}
               <section className="flex gap-2.5 ml-4">
                 <div>
                   <img
-                    src="/assets/emAlta/icons8-coração-48.png"
+                    src="/spotify/assets/emAlta/icons8-coração-48.png"
                     alt="Favoritar"
                     className="max-h-[25px]"
                     onClick={toggle}
@@ -136,7 +131,7 @@ const EsqueletoMusic = () => {
 
                 <div>
                   <img
-                    src="/assets/emAlta/icons8-compartilhar-24.png"
+                    src="/spotify/assets/emAlta/icons8-compartilhar-24.png"
                     alt="Compartilhar"
                     className="max-h-[25px]"
                   />
@@ -144,13 +139,12 @@ const EsqueletoMusic = () => {
 
                 <div>
                   <img
-                    src="/assets/emAlta/icons8-menu-2-30.png"
+                    src="/spotify/assets/emAlta/icons8-menu-2-30.png"
                     alt="Menu"
                     className="max-h-[25px]"
                     onClick={toggle2}
                   />
 
-                  {/* Overlay para quando clicar nas configs */}
                   {setting && (
                     <div className="h-screen inset-0 z-50 fixed bg-black opacity-85">
                       <div className="flex gap-4 mt-20 ml-5 items-center">
@@ -162,10 +156,9 @@ const EsqueletoMusic = () => {
                         </div>
                       </div>
 
-                      {/* Icones de curtir e compartilhar */}
                       <div className="flex items-center gap-2 mt-5 ml-5">
                         <img
-                          src="/assets/emAlta/icons8-coração-48.png"
+                          src="/spotify/assets/emAlta/icons8-coração-48.png"
                           alt=""
                           className="max-h-[35px]"
                         />
@@ -179,14 +172,13 @@ const EsqueletoMusic = () => {
 
                       <div className="flex items-center gap-2 mt-5 ml-5">
                         <img
-                          src="/assets/emAlta/icons8-compartilhar-24.png"
+                          src="/spotify/assets/emAlta/icons8-compartilhar-24.png"
                           alt=""
                           className="max-h-[30px]"
                         />
                         <h2 className="font-[Inter] font-bold text-[white]">Compartilhar</h2>
                       </div>
 
-                      {/* fechar */}
                       <div className="absolute bottom-5 left-35">
                         <h2
                           className="font-[Inter] font-bold text-[white]"
@@ -200,14 +192,17 @@ const EsqueletoMusic = () => {
                 </div>
               </section>
 
-              {/* Player */}
               <button
                 className="mr-6 p-4.5 rounded-[50%] bg-[#1ED760]"
                 onClick={togglePlayPause}
                 aria-label={tocando ? 'Pausar música' : 'Tocar música'}
               >
                 <img
-                  src={tocando ? '/assets/emAlta/Pause.png' : '/assets/emAlta/Player.png'}
+                  src={
+                    tocando
+                      ? '/spotify/assets/emAlta/Pause.png'
+                      : '/spotify/assets/emAlta/Player.png'
+                  }
                   alt={tocando ? 'Pausar' : 'Tocar'}
                   className="max-h-[25px]"
                 />
@@ -217,10 +212,8 @@ const EsqueletoMusic = () => {
             </section>
           </section>
 
-          {/* Resto da Página */}
           <section className="bg-[#1A1717] pl-4 pb-2">
             <Link to={`/artista/${musica.id}`}>
-              {/* Nome Banda */}
               <section className="flex items-center gap-2 pt-4">
                 <img
                   src={musica.imageBanda}
@@ -234,7 +227,6 @@ const EsqueletoMusic = () => {
               </section>
             </Link>
 
-            {/* Recomendações */}
             <section className="mt-5">
               <h2 className="font-bold font-[Inter] text-[white] text-[14px]">
                 Recomendações com base nesta música
