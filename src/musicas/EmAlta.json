@@ -1,8 +1,8 @@
 [
   {
     "id": "1",
-    "image": "/spotify/assets/emAlta/capas/Jump.png",
-    "imageBanda": "/spotify/assets/emAlta/bandas/BLACKPINK.webp",
+    "image": "/assets/emAlta/capas/Jump.png",
+    "imageBanda": "/assets/emAlta/bandas/BLACKPINK.webp",
     "cor": "#885B64",
     "titulo": "JUMP",
     "bandaNome": "BLACKPINK",
@@ -10,270 +10,292 @@
     "tempo": "2:44",
     "categoria": "kpop",
     "visualizacoes": "1.548.203",
-    "audio": "/spotify/musicas/GoldenHour.mp3"
+    "audio": "/musicas/GoldenHour.mp3"
   },
   {
     "id": "2",
-    "image": "/spotify/assets/emAlta/capas/ArtistaG.png",
-    "imageBanda": "/spotify/assets/emAlta/bandas/Veigh.webp",
+    "image": "/assets/emAlta/capas/ArtistaG.png",
+    "imageBanda": "/assets/emAlta/bandas/Veigh.webp",
     "cor": "#214D58",
     "titulo": "Artista Genérico",
     "bandaNome": "Veigh",
     "ano": "2025",
     "tempo": "2:30",
     "categoria": "trap",
-    "visualizacoes": "438.721"
+    "visualizacoes": "438.721",
+    "audio": "/musicas/GoldenHour.mp3"
   },
   {
     "id": "3",
-    "image": "/spotify/assets/emAlta/capas/SuaCasa.png",
-    "imageBanda": "/spotify/assets/emAlta/capas/SuaCasa.png",
+    "image": "/assets/emAlta/capas/SuaCasa.png",
+    "imageBanda": "/assets/emAlta/capas/SuaCasa.png",
     "cor": "#5E6871",
     "titulo": "Eu Vou na Sua Casa",
     "bandaNome": "Felipe Amorim",
     "ano": "2025",
     "tempo": "2:59",
     "categoria": "mpb",
-    "visualizacoes": "937.251"
+    "visualizacoes": "937.251",
+    "audio": "/musicas/GoldenHour.mp3"
   },
   {
     "id": "4",
-    "image": "/spotify/assets/emAlta/capas/FoiMalDeus.png",
-    "imageBanda": "/spotify/assets/emAlta/capas/FoiMalDeus.png",
+    "image": "/assets/emAlta/capas/FoiMalDeus.png",
+    "imageBanda": "/assets/emAlta/capas/FoiMalDeus.png",
     "cor": "#8F3D36",
     "titulo": "Foi Mal Deus - Ao Vivo",
     "bandaNome": "Hugo & Guilherme",
     "ano": "2025",
     "tempo": "2:55",
     "categoria": "evangelico",
-    "visualizacoes": "1.124.580"
+    "visualizacoes": "1.124.580",
+    "audio": "/musicas/GoldenHour.mp3"
   },
   {
     "id": "5",
-    "image": "/spotify/assets/emAlta/capas/CHAMPAIN.png",
-    "imageBanda": "/spotify/assets/emAlta/bandas/TravisScott.webp",
+    "image": "/assets/emAlta/capas/CHAMPAIN.png",
+    "imageBanda": "/assets/emAlta/bandas/TravisScott.webp",
     "cor": "#AAA19C",
     "titulo": "CHAMPAIN & VACAY",
     "bandaNome": "Travis Scott",
     "ano": "2025",
     "tempo": "3:04",
     "categoria": "trap",
-    "visualizacoes": "1.893.571"
+    "visualizacoes": "1.893.571",
+    "audio": "/musicas/GoldenHour.mp3"
   },
   {
     "id": "6",
-    "image": "/spotify/assets/emAlta/capas/eEsse.png",
-    "imageBanda": "/spotify/assets/emAlta/capas/eEsse.png",
+    "image": "/assets/emAlta/capas/eEsse.png",
+    "imageBanda": "/assets/emAlta/capas/eEsse.png",
     "cor": "#583D1B",
     "titulo": "Quem é Esse?",
     "bandaNome": "Julliany Souza",
     "ano": "2025",
     "tempo": "7:48",
     "categoria": "mpb",
-    "visualizacoes": "657.392"
+    "visualizacoes": "657.392",
+    "audio": "/musicas/GoldenHour.mp3"
   },
   {
     "id": "7",
-    "image": "/spotify/assets/emAlta/capas/Gabriela.png",
-    "imageBanda": "/spotify/assets/emAlta/bandas/KATEYES.png",
+    "image": "/assets/emAlta/capas/Gabriela.png",
+    "imageBanda": "/assets/emAlta/bandas/KATEYES.png",
     "cor": "#740B0B",
     "titulo": "Gabriela",
     "bandaNome": "KATSEYE",
     "ano": "2025",
     "tempo": "3:17",
     "categoria": "kpop",
-    "visualizacoes": "1.129.845"
+    "visualizacoes": "1.129.845",
+    "audio": "/musicas/GoldenHour.mp3"
   },
   {
     "id": "8",
-    "image": "/spotify/assets/emAlta/capas/Gnarly.png",
-    "imageBanda": "/spotify/assets/emAlta/bandas/KATEYES.png",
+    "image": "/assets/emAlta/capas/Gnarly.png",
+    "imageBanda": "/assets/emAlta/bandas/KATEYES.png",
     "cor": "#1D7610",
     "titulo": "Gnarly",
     "bandaNome": "KATSEYE",
     "ano": "2025",
     "tempo": "3:17",
     "categoria": "kpop",
-    "visualizacoes": "923.871"
+    "visualizacoes": "923.871",
+    "audio": "/musicas/GoldenHour.mp3"
   },
   {
     "id": "9",
-    "image": "/spotify/assets/emAlta/capas/GameBoy.png",
-    "imageBanda": "/spotify/assets/emAlta/bandas/KATEYES.png",
+    "image": "/assets/emAlta/capas/GameBoy.png",
+    "imageBanda": "/assets/emAlta/bandas/KATEYES.png",
     "cor": "#233542",
     "titulo": "Gameboy",
     "bandaNome": "KATSEYE",
     "ano": "2025",
     "tempo": "3:05",
     "categoria": "kpop",
-    "visualizacoes": "1.104.375"
+    "visualizacoes": "1.104.375",
+    "audio": "/musicas/GoldenHour.mp3"
   },
   {
     "id": "10",
-    "image": "/spotify/assets/emAlta/capas/likeJENNIE.png",
-    "imageBanda": "/spotify/assets/emAlta/bandas/JENNIE.png",
+    "image": "/assets/emAlta/capas/likeJENNIE.png",
+    "imageBanda": "/assets/emAlta/bandas/JENNIE.png",
     "cor": "#9F0A0A",
     "titulo": "Gameboy",
     "bandaNome": "JENNIE",
     "ano": "2025",
     "tempo": "2:03",
     "categoria": "kpop",
-    "visualizacoes": "879.332"
+    "visualizacoes": "879.332",
+    "audio": "/musicas/GoldenHour.mp3"
   },
   {
     "id": "11",
-    "image": "/spotify/assets/emAlta/bandas/Killin'it Girl.png",
-    "imageBanda": "/spotify/assets/emAlta/bandas/Killin'it Girl.png",
+    "image": "/assets/emAlta/bandas/Killin'it Girl.png",
+    "imageBanda": "/assets/emAlta/bandas/Killin'it Girl.png",
     "cor": "#454545",
     "titulo": "Killin'it Girl",
     "bandaNome": "j-hope",
     "ano": "2025",
     "tempo": "2:03",
     "categoria": "kpop",
-    "visualizacoes": "1.478.231"
+    "visualizacoes": "1.478.231",
+    "audio": "/musicas/GoldenHour.mp3"
   },
   {
     "id": "13",
-    "image": "/spotify/assets/emAlta/capas/CHAMPAIN.png",
-    "imageBanda": "/spotify/assets/emAlta/bandas/TravisScott.webp",
+    "image": "/assets/emAlta/capas/CHAMPAIN.png",
+    "imageBanda": "/assets/emAlta/bandas/TravisScott.webp",
     "cor": "#A19894",
     "titulo": "WHERE WAS YOU",
     "bandaNome": "Travis Scott",
     "ano": "2025",
     "tempo": "2:12",
     "categoria": "trap",
-    "visualizacoes": "1.375.487"
+    "visualizacoes": "1.375.487",
+    "audio": "/musicas/GoldenHour.mp3"
   },
   {
     "id": "14",
-    "image": "/spotify/assets/emAlta/capas/CHAMPAIN.png",
-    "imageBanda": "/spotify/assets/emAlta/bandas/TravisScott.webp",
+    "image": "/assets/emAlta/capas/CHAMPAIN.png",
+    "imageBanda": "/assets/emAlta/bandas/TravisScott.webp",
     "cor": "#A19894",
     "titulo": "JACKSBOYS 2",
     "bandaNome": "Travis Scott",
     "ano": "2025",
     "tempo": "2:44",
     "categoria": "trap",
-    "visualizacoes": "1.948.332"
+    "visualizacoes": "1.948.332",
+    "audio": "/musicas/GoldenHour.mp3"
   },
   {
     "id": "15",
-    "image": "/spotify/assets/emAlta/capas/CHAMPAIN.png",
-    "imageBanda": "/spotify/assets/emAlta/bandas/TravisScott.webp",
+    "image": "/assets/emAlta/capas/CHAMPAIN.png",
+    "imageBanda": "/assets/emAlta/bandas/TravisScott.webp",
     "cor": "#A19894",
     "titulo": "DUMBO",
     "bandaNome": "Travis Scott",
     "ano": "2025",
     "tempo": "3:22",
     "categoria": "trap",
-    "visualizacoes": "1.740.200"
+    "visualizacoes": "1.740.200",
+    "audio": "/musicas/GoldenHour.mp3"
   },
   {
     "id": "16",
-    "image": "/spotify/assets/emAlta/bandas/CopiaProibida.png",
-    "imageBanda": "/spotify/assets/emAlta/bandas/CopiaProibida.png",
+    "image": "/assets/emAlta/bandas/CopiaProibida.png",
+    "imageBanda": "/assets/emAlta/bandas/CopiaProibida.png",
     "cor": "#AE403A",
     "titulo": "Cópia Proibida",
     "bandaNome": "Léo Foguete",
     "ano": "2025",
     "tempo": "2:39",
     "categoria": "mpb",
-    "visualizacoes": "238.102"
+    "visualizacoes": "238.102",
+    "audio": "/musicas/GoldenHour.mp3"
   },
   {
     "id": "17",
-    "image": "/spotify/assets/emAlta/bandas/CopiaProibida.png",
-    "imageBanda": "/spotify/assets/emAlta/bandas/CopiaProibida.png",
+    "image": "/assets/emAlta/bandas/CopiaProibida.png",
+    "imageBanda": "/assets/emAlta/bandas/CopiaProibida.png",
     "cor": "#AE403A",
     "titulo": "Última Noite - Solo",
     "bandaNome": "Léo Foguete",
     "ano": "2025",
     "tempo": "2:39",
     "categoria": "mpb",
-    "visualizacoes": "334.271"
+    "visualizacoes": "334.271",
+    "audio": "/musicas/GoldenHour.mp3"
   },
   {
     "id": "18",
-    "image": "/spotify/assets/emAlta/bandas/CopiaProibida.png",
-    "imageBanda": "/spotify/assets/emAlta/bandas/CopiaProibida.png",
+    "image": "/assets/emAlta/bandas/CopiaProibida.png",
+    "imageBanda": "/assets/emAlta/bandas/CopiaProibida.png",
     "cor": "#AE403A",
     "titulo": "Inconfiável",
     "bandaNome": "Léo Foguete",
     "ano": "2025",
     "tempo": "3:47",
     "categoria": "mpb",
-    "visualizacoes": "582.137"
+    "visualizacoes": "582.137",
+    "audio": "/musicas/GoldenHour.mp3"
   },
   {
     "id": "19",
-    "image": "/spotify/assets/emAlta/bandas/CopiaProibida.png",
-    "imageBanda": "/spotify/assets/emAlta/bandas/CopiaProibida.png",
+    "image": "/assets/emAlta/bandas/CopiaProibida.png",
+    "imageBanda": "/assets/emAlta/bandas/CopiaProibida.png",
     "cor": "#AE403A",
     "titulo": "Veneza",
     "bandaNome": "Léo Foguete",
     "ano": "2025",
     "tempo": "3:11",
     "categoria": "mpb",
-    "visualizacoes": "304.923"
+    "visualizacoes": "304.923",
+    "audio": "/musicas/GoldenHour.mp3"
   },
   {
     "id": "20",
-    "image": "/spotify/assets/emAlta/bandas/NoMesmoOlhar.png",
-    "imageBanda": "/spotify/assets/emAlta/bandas/NoMesmoOlhar.png",
+    "image": "/assets/emAlta/bandas/NoMesmoOlhar.png",
+    "imageBanda": "/assets/emAlta/bandas/NoMesmoOlhar.png",
     "cor": "#708AA9",
     "titulo": "No Mesmo Olhar",
     "bandaNome": "Cleber & Cauan",
     "ano": "2025",
     "tempo": "3:07",
     "categoria": "evangelico",
-    "visualizacoes": "453.822"
+    "visualizacoes": "453.822",
+    "audio": "/musicas/GoldenHour.mp3"
   },
   {
     "id": "21",
-    "image": "/spotify/assets/emAlta/bandas/NoMesmoOlhar.png",
-    "imageBanda": "/spotify/assets/emAlta/bandas/NoMesmoOlhar.png",
+    "image": "/assets/emAlta/bandas/NoMesmoOlhar.png",
+    "imageBanda": "/assets/emAlta/bandas/NoMesmoOlhar.png",
     "cor": "#708AA9",
     "titulo": "Amor Clandestino",
     "bandaNome": "Cleber & Cauan",
     "ano": "2025",
     "tempo": "4:13",
     "categoria": "evangelico",
-    "visualizacoes": "378.999"
+    "visualizacoes": "378.999",
+    "audio": "/musicas/GoldenHour.mp3"
   },
   {
     "id": "22",
-    "image": "/spotify/assets/emAlta/bandas/NoMesmoOlhar.png",
-    "imageBanda": "/spotify/assets/emAlta/bandas/NoMesmoOlhar.png",
+    "image": "/assets/emAlta/bandas/NoMesmoOlhar.png",
+    "imageBanda": "/assets/emAlta/bandas/NoMesmoOlhar.png",
     "cor": "#708AA9",
     "titulo": "Até ficar Velhinho",
     "bandaNome": "Cleber & Cauan",
     "ano": "2025",
     "tempo": "3:35",
     "categoria": "evangelico",
-    "visualizacoes": "520.871"
+    "visualizacoes": "520.871",
+    "audio": "/musicas/GoldenHour.mp3"
   },
   {
     "id": "23",
-    "image": "/spotify/assets/emAlta/bandas/NoMesmoOlhar.png",
-    "imageBanda": "/spotify/assets/emAlta/bandas/NoMesmoOlhar.png",
+    "image": "/assets/emAlta/bandas/NoMesmoOlhar.png",
+    "imageBanda": "/assets/emAlta/bandas/NoMesmoOlhar.png",
     "cor": "#708AA9",
     "titulo": "Amor sem Juízo",
     "bandaNome": "Cleber & Cauan",
     "ano": "2025",
     "tempo": "3:35",
     "categoria": "evangelico",
-    "visualizacoes": "279.834"
+    "visualizacoes": "279.834",
+    "audio": "/musicas/GoldenHour.mp3"
   },
   {
     "id": "24",
-    "image": "/spotify/assets/emAlta/bandas/NoMesmoOlhar.png",
-    "imageBanda": "/spotify/assets/emAlta/bandas/NoMesmoOlhar.png",
+    "image": "/assets/emAlta/bandas/NoMesmoOlhar.png",
+    "imageBanda": "/assets/emAlta/bandas/NoMesmoOlhar.png",
     "cor": "#708AA9",
     "titulo": "Muito Estranho",
     "bandaNome": "Cleber & Cauan",
     "ano": "2025",
     "tempo": "3:35",
     "categoria": "evangelico",
-    "visualizacoes": "404.122"
+    "visualizacoes": "404.122",
+    "audio": "/musicas/GoldenHour.mp3"
   }
 ]

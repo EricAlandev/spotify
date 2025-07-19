@@ -8,6 +8,8 @@ const EsqueletoMusic = () => {
   const { id } = useParams();
   const musica = EmAlta.find((m) => m.id === id);
 
+  const base = import.meta.env.BASE_URL; // ex: '/spotify/'
+
   const [coracao, setCoracao] = useState(false);
   const [setting, setSetting] = useState(false);
   const [tocando, setTocando] = useState(false);
@@ -36,6 +38,16 @@ const EsqueletoMusic = () => {
     }
   };
 
+  // Função para montar URL completa considerando base e limpando barras extras
+  const buildUrl = (path) => {
+    if (!path) return '';
+    return `${base}${path.replace(/^\/+/, '')}`;
+  };
+
+  if (!musica) {
+    return <p className="text-white">Música não encontrada.</p>;
+  }
+
   return (
     <main>
       <section>
@@ -45,7 +57,7 @@ const EsqueletoMusic = () => {
             style={{ background: `linear-gradient(to bottom, ${musica.cor}, #1A1717)` }}
           >
             <div className="flex mx-auto justify-center">
-              <img src={musica.image} alt={musica.titulo} className="mt-6" />
+              <img src={buildUrl(musica.image)} alt={musica.titulo} className="mt-6" />
             </div>
 
             <h1 className="mt-4 ml-4 font-[Inter] font-bold text-[22px] text-[white]">
@@ -54,7 +66,7 @@ const EsqueletoMusic = () => {
 
             <section className="flex items-center gap-2.5 ml-4">
               <img
-                src={musica.imageBanda}
+                src={buildUrl(musica.imageBanda)}
                 alt={musica.bandaNome}
                 className="max-h-[30px] mt-1.5 rounded-[50%]"
               />
@@ -75,7 +87,7 @@ const EsqueletoMusic = () => {
               <section className="flex gap-2.5 ml-4">
                 <div>
                   <img
-                    src="/spotify/assets/emAlta/icons8-coração-48.png"
+                    src={buildUrl('/assets/emAlta/icons8-coração-48.png')}
                     alt="Favoritar"
                     className="max-h-[25px]"
                     onClick={toggle}
@@ -95,7 +107,7 @@ const EsqueletoMusic = () => {
                       >
                         <div className="h-full">
                           <div className="flex justify-center pt-[190px]">
-                            <img src={musica.image} alt="" className="max-h-[150px]" />
+                            <img src={buildUrl(musica.image)} alt="" className="max-h-[150px]" />
                           </div>
 
                           <div className="flex flex-col">
@@ -131,7 +143,7 @@ const EsqueletoMusic = () => {
 
                 <div>
                   <img
-                    src="/spotify/assets/emAlta/icons8-compartilhar-24.png"
+                    src={buildUrl('/assets/emAlta/icons8-compartilhar-24.png')}
                     alt="Compartilhar"
                     className="max-h-[25px]"
                   />
@@ -139,7 +151,7 @@ const EsqueletoMusic = () => {
 
                 <div>
                   <img
-                    src="/spotify/assets/emAlta/icons8-menu-2-30.png"
+                    src={buildUrl('/assets/emAlta/icons8-menu-2-30.png')}
                     alt="Menu"
                     className="max-h-[25px]"
                     onClick={toggle2}
@@ -148,7 +160,7 @@ const EsqueletoMusic = () => {
                   {setting && (
                     <div className="h-screen inset-0 z-50 fixed bg-black opacity-85">
                       <div className="flex gap-4 mt-20 ml-5 items-center">
-                        <img src={musica.image} alt="" className="max-h-[80px]" />
+                        <img src={buildUrl(musica.image)} alt="" className="max-h-[80px]" />
 
                         <div>
                           <h2 className="text-[white] font-[Inter] font-bold">{musica.titulo}</h2>
@@ -158,7 +170,7 @@ const EsqueletoMusic = () => {
 
                       <div className="flex items-center gap-2 mt-5 ml-5">
                         <img
-                          src="/spotify/assets/emAlta/icons8-coração-48.png"
+                          src={buildUrl('/assets/emAlta/icons8-coração-48.png')}
                           alt=""
                           className="max-h-[35px]"
                         />
@@ -172,7 +184,7 @@ const EsqueletoMusic = () => {
 
                       <div className="flex items-center gap-2 mt-5 ml-5">
                         <img
-                          src="/spotify/assets/emAlta/icons8-compartilhar-24.png"
+                          src={buildUrl('/assets/emAlta/icons8-compartilhar-24.png')}
                           alt=""
                           className="max-h-[30px]"
                         />
@@ -200,15 +212,15 @@ const EsqueletoMusic = () => {
                 <img
                   src={
                     tocando
-                      ? '/spotify/assets/emAlta/Pause.png'
-                      : '/spotify/assets/emAlta/Player.png'
+                      ? buildUrl('/assets/emAlta/Pause.png')
+                      : buildUrl('/assets/emAlta/Player.png')
                   }
                   alt={tocando ? 'Pausar' : 'Tocar'}
                   className="max-h-[25px]"
                 />
               </button>
 
-              <audio ref={audioRef} src={musica.audio} />
+              <audio ref={audioRef} src={buildUrl(musica.audio)} />
             </section>
           </section>
 
@@ -216,7 +228,7 @@ const EsqueletoMusic = () => {
             <Link to={`/artista/${musica.id}`}>
               <section className="flex items-center gap-2 pt-4">
                 <img
-                  src={musica.imageBanda}
+                  src={buildUrl(musica.imageBanda)}
                   alt={musica.titulo}
                   className="max-h-[72px] rounded-[50%]"
                 />

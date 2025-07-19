@@ -9,7 +9,7 @@ const PopUp = () => {
     <main className=" pt-[80px] bg-[#121212] pb-4 flex items-center justify-center">
         {open && (
           <div 
-            className="max-w-[330px] bg-[#2A2A2A] text-white p-6 rounded-[25px] "
+            className="xs:min-w-[150px] xs:max-w-[150px]  sm:min-w-[360px] bg-[#2A2A2A] text-white p-6 rounded-[25px] "
           >
             {/* Logo + X fechar */}
             <section className="flex justify-between items-center mb-4">

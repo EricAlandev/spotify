@@ -1,13 +1,23 @@
-import { useParams } from 'react-router-dom'
-import { Link } from 'react-router-dom';
-import EmAlta from '../../musicas/EmAlta.json'
+import { useParams, Link } from 'react-router-dom';
+import EmAlta from '../../musicas/EmAlta.json';
 import Populares from '../compo-main/populares';
-import Contato from '../compo-main/Contato'
+import Contato from '../compo-main/Contato';
 
 const ArtistaEsqueleto = () => {
   const { id } = useParams();
   const musica = EmAlta.find((musica) => musica.id === id);
   const musicaCantor = EmAlta.filter((m) => m.bandaNome === musica?.bandaNome);
+
+  const base = import.meta.env.BASE_URL; // '/spotify/' por exemplo
+
+  const buildUrl = (path) => {
+    if (!path) return '';
+    return `${base}${path.replace(/^\/+/, '')}`;
+  };
+
+  if (!musica) {
+    return <p className="text-white">Artista não encontrado.</p>;
+  }
 
   return (
     <main className="pt-[80px] bg-[#121212]">
@@ -22,9 +32,9 @@ const ArtistaEsqueleto = () => {
         {/* Imagem Canto */}
         <div className="flex justify-center">
           <img
-            src={`/spotify/${musica.imageBanda}`}
-            alt=""
-            className="max-h-[170px] rounded-[50%]"
+            src={buildUrl(musica.imageBanda)}
+            alt={musica.bandaNome}
+            className="max-h-[170px] mb-[15px] rounded-[50%]"
           />
         </div>
 
@@ -40,12 +50,12 @@ const ArtistaEsqueleto = () => {
             </button>
 
             <img
-              src="/spotify/assets/emAlta/icons8-compartilhar-24.png"
+              src={buildUrl('/assets/emAlta/icons8-compartilhar-24.png')}
               alt="Compartilhar"
               className="max-h-[25px]"
             />
             <img
-              src="/spotify/assets/emAlta/icons8-menu-2-30.png"
+              src={buildUrl('/assets/emAlta/icons8-menu-2-30.png')}
               alt="Menu"
               className="max-h-[25px]"
             />
@@ -53,8 +63,8 @@ const ArtistaEsqueleto = () => {
 
           <button className="mr-6 p-4.5 rounded-[50%] bg-[#1ED760]">
             <img
-              src="/spotify/assets/emAlta/Player.png"
-              alt=""
+              src={buildUrl('/assets/emAlta/Player.png')}
+              alt="Player"
               className="max-h-[25px]"
             />
           </button>
@@ -71,8 +81,8 @@ const ArtistaEsqueleto = () => {
           <Link to={`/musica/${musicas.id}`} key={musicas.id}>
             <div className="flex gap-3.5 mt-4 items-center">
               <img
-                src={`/spotify/${musicas.image}`}
-                alt=""
+                src={buildUrl(musicas.image)}
+                alt={musicas.titulo}
                 className="max-h-[75px]"
               />
 
