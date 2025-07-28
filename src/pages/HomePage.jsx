@@ -1,16 +1,13 @@
-import ArtistasPopulares from '../componentes/compo-main/ArtistasPopulares'
-import Contato from '../componentes/compo-main/Contato'
-import MusicaAlta from '../componentes/compo-main/MusicaAlta'
-import PopUp from '../componentes/PopUp'
+import LeftSide from '../componentes/Homepage/LeftSide'
+import RightSide from '../componentes/Homepage/RightSide'
+
 
 const HomePage = () =>{
 
     return(
-        <main className='bg-[#121212]'>
-            <PopUp/>
-            <MusicaAlta/>
-            <ArtistasPopulares/>
-            <Contato/>
+        <main className='flex gap-4 bg-[black]'>
+            <LeftSide/>
+            <RightSide/>
         </main>
     )
 }

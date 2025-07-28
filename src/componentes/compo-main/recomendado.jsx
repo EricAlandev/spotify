@@ -25,7 +25,7 @@ const Recomendados = () => {
     .slice(0, 5);
 
   return (
-    <main className="mt-[12px] mb-[80px]">
+    <main className="mt-[12px] mb-[80px] md:mb-[30px]">
       {recomendados.map((rec) => (
         <Link key={rec.id} to={`/musica/${rec.id}`}>
           <section className="flex items-center gap-2 my-2">

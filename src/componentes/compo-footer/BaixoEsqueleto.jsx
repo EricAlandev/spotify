@@ -4,13 +4,17 @@ const EsqueletoBaixo = ({
     descri6, descri7, descri8, descri9, descri10,
     descri11, descri12, descri13, descri14, descri15, descri16
   }) => {
-    const tituloClass = `min-w-[150px] font-Inter font-semibold text-white mt-2.5 text-[19.5px]`
-    const descClass = `min-w-[150px] font-Inter font-medium text-gray-400 mt-1 text-[15px]`
+    const tituloClass = `min-w-[150px] font-Inter font-semibold text-white mt-2.5 text-[19.5px] md:mt-[20px] md:text-[30px] `
+    const descClass = `min-w-[150px] font-Inter font-medium text-gray-400 mt-1 text-[15px]
+    md:text-[17px] 
+    `
   
     return (
-      <footer className=" pb-4 ml-4 flex flex-col gap-8">
+      <footer className=" pb-4 ml-4 flex flex-col gap-8
+      md:max-w-[1470px] md:h-auto md:mx-auto md:flex-row md:gap-33 md:mt-[20px] md:pl-[10px] md:pr-[20px]
+      ">
 
-        <section className="flex flex-col gap-1">
+        <section className="flex flex-col gap-1 ">
           <h2 className={tituloClass}>{ti1}</h2>
           <h3 className={descClass}>{descri1}</h3>
           <h3 className={descClass}>{descri2}</h3>
