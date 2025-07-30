@@ -64,7 +64,7 @@ const EsqueletoMusic = () => {
     <div className='flex'>
       <LeftSide/>
 <main>
-<section className=' min-w-[365px] md:min-w-[1500px] md:mx-auto'>
+<section className=' min-w-[380px] md:min-w-[1500px] md:mx-auto'>
         <div>
           <section
             className="pt-[80px] pb-4"

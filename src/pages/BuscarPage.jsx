@@ -18,34 +18,15 @@ const BuscarPage = () => {
 
                 <LeftSide/>
             
-
-            <section className=" mr-[15px]">
-                <h2 className=" pt-[45px] mb-3.5 font-[Inter] font-bold text-[25px] text-[white] md:hidden" >Buscar</h2>
-
-                {/*ícone da lupa */}
-                <img
-              src={buildUrl("/assets/emAlta/footer/Search.png")}
-              alt="Buscar"
-              className="max-h-[26px] border-r-[1px] border-[gray] 
-              absolute bottom-176 left-8 md:hidden
-              "
-            />          
-
-                <label htmlFor="busca"></label>
-                <input type="text" name="busca" id="busca" placeholder="O que você quer ouvir?"
-                className="w-full  pt-2.5 pl-[45px]  pb-2.5 pr-2.5 bg-[white] rounded-[8px] outline-none md:hidden"
-                />
-            </section>
-
             
             {/*Se for mobile, ele terá o mt para justamente não ficar para cima demais. */}
             <section className='mr-[16px] md:mt-[80px] md:ml-[100px]'>
-                <h2 className=" pt-[30px] mb-3.5 font-[Inter] font-bold text-[15px] text-[white] md:text-[30px]">Navegar por todas as seções</h2>
+                <h2 className=" mb-3.5 font-[Inter] font-bold text-[30px] text-[white] md:text-[30px] pt-[40px]">Navegar por todas as seções</h2>
                 {/*Seções */}
-                <section className="grid grid-cols-2 gap-4 grid-rows-2 mt-[20px] text-[white] ">
+                <section className="grid grid-cols-2 gap-4 grid-rows-2 mt-[50px] text-[white]  ">
 
                     {/*Kpop */}
-                    <Link to={'/Categoria/kpop'} className='flex gap-13 md:gap-70 pl-[15px]  items-center bg-[#43C5A7] rounded-[8px] min-h-[75px] overflow-hidden  md:min-w-[450px] md:min-h-[100px]'> 
+                    <Link to={'/Categoria/kpop'} className='flex gap-13 md:gap-70 pl-[15px]  items-center bg-[#43C5A7] rounded-[8px] min-h-[100px] overflow-hidden  md:min-w-[450px] md:min-h-[100px]'> 
                             <h2 className='text-[20px] md:text-[32px] font-[Inter] font-light'>Kpop</h2>
                             <img src={buildUrl("/assets/categorias/Kpop.png")} alt=""
                             className={`rotate-335 min-h-[70px]`}
