@@ -3,11 +3,21 @@ import EmAlta from '../../musicas/EmAlta.json';
 import Populares from '../compo-main/populares';
 import Contato from '../compo-main/Contato';
 import LeftSide from '../Homepage/LeftSide'; // ajuste o caminho se necessário
+import { useState } from 'react';
 
 const ArtistaEsqueleto = () => {
   const { id } = useParams();
   const musica = EmAlta.find((musica) => musica.id === id);
   const musicaCantor = EmAlta.filter((m) => m.bandaNome === musica?.bandaNome);
+
+  const [setting, setSetting] = useState(false)
+
+  const [seguira, setSeguira] = useState('Seguir')
+  const [seguir, setSeguir] = useState(false)
+
+  const popUp = () => {
+    setSetting(!setting)
+  }
 
   const base = import.meta.env.BASE_URL;
 
@@ -51,30 +61,99 @@ const ArtistaEsqueleto = () => {
             {musica.visualizacoes} ouvintes mensais
           </h2>
 
-          <section className="flex justify-between pl-4">
+          <section className="flex justify-between pl-4 mt-[7px]">
             <section className="flex items-center gap-2">
-              <button className="px-4 py-2 text-white text-[11.5px] border-2 border-gray-500 rounded-[30px]">
-                Seguir
+              <button className=" px-4 py-2 text-white text-[11.5px] border-2 border-gray-500 rounded-[30px] duration-120 hover:bg-[#0D0D0D]"
+
+              onMouseEnter={() =>{
+                if (!seguir) setSeguira(`Siga ${musica.bandaNome}`)
+              }}
+
+              onMouseLeave={() => {
+                if (!seguir) setSeguira('Seguir')
+              }}
+
+              onClick={() => {
+                if (!seguir) {
+
+                  setSeguira('Seguindo !')
+                setSeguir(true)
+                }
+
+                else if (seguir) {
+
+                  setSeguira('Parou de seguir !')
+                setSeguir(false)
+                }
+                
+              }}
+              
+              >
+                {seguira}
               </button>
+
               <img
                 src={buildUrl('/assets/emAlta/icons8-compartilhar-24.png')}
                 alt="Compartilhar"
                 className="max-h-[25px]"
               />
+
+              {/*configuracoes */}
               <img
                 src={buildUrl('/assets/emAlta/icons8-menu-2-30.png')}
                 alt="Menu"
                 className="max-h-[25px]"
+                onClick={() => {
+                  popUp()
+                }}
               />
+
+              {/*Se clicar nos settings, ele renderiza essa parte. */}
+              {setting && (
+                    <div className="h-screen inset-0 z-50 fixed bg-black opacity-85">
+                      <Link to={`/musica/${musica.id}`}>
+                          <div className="flex gap-4 mt-20 ml-5 items-center md:justify-center md:mt-[200px] md:ml-0">
+                            <img src={buildUrl(musica.image)} alt="" className="max-h-[80px]
+                            md:min-h-[120px]
+                            " />
+
+                            <div>
+                              <h2 className="text-[white] font-[Inter] font-bold
+                              md:text-[18px]
+                              ">{musica.titulo}</h2>
+                              <h3 className="text-[gray]  md:text-[24px] font-[Inter] font-bold">{musica.bandaNome}</h3>
+                            </div>
+
+                          </div>
+                      </Link>
+                      
+
+                      <div className='flex justify-center mt-[50px]'>
+                              <h2 className='font-[Inter] text-[19px] text-[white]  duration-120'>Clique para assistir a nova música da banda 
+                                <Link to={`/musica/${musica.id}`} className='md:ml-[10px] underline transform hover:scale-[1.05] duration-200'>
+                                  {musica.bandaNome}!
+                                </Link>
+                              </h2>
+                        </div>
+
+                      
+                      <div className="absolute bottom-5 left-35 w-full
+                      md:flex md:justify-center md:left-0">
+                        <h2
+                          className="font-[Inter] font-bold text-[white]"
+                          onClick={() => 
+                            popUp()
+                          }
+                        >
+                          Fechar
+                        </h2>
+                      </div>
+                    </div>
+                  )}
+
             </section>
 
-            <button className="mr-6 p-4.5 rounded-[50%] bg-[#1ED760]">
-              <img
-                src={buildUrl('/assets/emAlta/Player.png')}
-                alt="Player"
-                className="max-h-[25px]"
-              />
-            </button>
+            
           </section>
         </section>
 

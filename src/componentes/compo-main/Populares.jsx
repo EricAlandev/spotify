@@ -69,12 +69,14 @@ const Populares = () => {
             >
               {musicaOrdemDesktop.map( (itens) => (
                 <SwiperSlide  key={itens.id}>
-                  <Link className='hidden md:block'  to={`/musica/${itens.id}`}>
-                <img
-                    src={buildUrl(itens.image)}
-                    alt={itens.titulo}
-                    className='max-h-[75px] md:min-h-[150px] '
-                  />
+                   <Link to={`/musica/${itens.id}`} className="hidden md:block">
+    <img
+      src={buildUrl(itens.image)}
+      alt={itens.titulo}
+      className={`max-h-[75px] md:min-h-[150px] ${
+        musicaOrdemDesktop.length === 1 ? 'block mx-auto' : ''
+      }`}
+    />
 
                   <section className='flex flex-col'>
                     <h2 className='font-[Inter] font-bold text-[white] text-[12.5px] 

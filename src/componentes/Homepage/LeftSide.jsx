@@ -1,9 +1,17 @@
 import { Link } from "react-router-dom";
 import { useLibrary } from "../../../src/context/LibraryContext";
+import { useState } from "react";
 
 const LeftSide = () => {
   const base = import.meta.env.BASE_URL || "";
   const { library , removeFromLibrary} = useLibrary();
+
+  //Feito para o botão +
+  const [mais, setMais] = useState(false)
+
+  const toggle = () => {
+    setMais(!mais)
+  }
 
   const buildUrl = (path) => {
     if (!path) return "";
@@ -13,12 +21,30 @@ const LeftSide = () => {
   return (
     <aside className="hidden md:flex bg-[#121212] md:pt-[120px] md:min-w-[400px] flex-col p-4">
       <div className="flex gap-4 items-center mb-6">
-        <h2 className="font-[Inter] text-[18px] text-white">Sua Biblioteca</h2>
+        <h2 className="font-[Inter] text-[18px] text-white py-2">Sua Biblioteca</h2>
         <img
           src={buildUrl("/assets/emAlta/Plus.png")}
           alt="Ícone de adição"
           className="max-h-[30px]"
+          onClick={() =>
+            toggle()
+          }
         />
+
+        
+          {mais && (
+            <div className="flex bg-[#3A3A3A] p-2 duration-120 z-50 rounded-[20px] text-[#D1D1D1]
+            hover:bg-[#0D0D0D]
+            ">
+              <img src={buildUrl("/assets/mobile/music.png")} alt=""
+              className="max-h-[25px]"
+               />
+              
+              <Link to={'/buscar'}>
+                <h2 className=" font-[Inter] font-medium">Criar nova Playlist</h2>
+              </Link>
+            </div>
+          )}
       </div>
 
       <ul className="space-y-2 text-white">

@@ -61,8 +61,14 @@ const toggle = () => setOpen(!open);
                             </section>
 
                             <section className="flex flex-col gap-5 mt-[25px]">
-                            <h2 className="font-[Inter] font-bold text-[22px]">Entre</h2>
-                            <h2 className="font-[Inter] font-bold text-[22px]">Inscreva-se</h2>
+                            
+                            <Link to={'/Assinante'}>
+                                <h2 className="font-[Inter] font-bold text-[22px]">Entre</h2>
+                            </Link>
+
+                            <Link to={'/Assinante'}>
+                                <h2 className="font-[Inter] font-bold text-[22px]">Inscreva-se</h2>
+                            </Link>
                             <h2 className="font-[40px]">-</h2>
                             </section>
 

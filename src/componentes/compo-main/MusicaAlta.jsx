@@ -13,7 +13,7 @@ const MusicaAlta = () => {
   };
 
   return (
-    <main className="md:bg-gradient-to-b md:from-[#212121] md:to-[#121212] md:max-w-[1500px] md:mx-auto">
+    <main className="md:bg-gradient-to-b md:from-[#212121] md:to-[#121212] md:max-w-[1600px] md:mx-auto">
       <section className="ml-7 pb-4">
         <h2
           className="mb-4 font-[Inter] font-[500] text-[white] text-[22px] pt-2.5
@@ -23,12 +23,12 @@ const MusicaAlta = () => {
           Músicas em Alta
         </h2>
 
-        <section className="max-w-[325px] md:min-w-[1500px]">
+        <section className="max-w-[325px] md:min-w-[1460px]">
           <Swiper
             slidesPerView={2}
             breakpoints={{
               1024: {
-                slidesPerView: 5,
+                slidesPerView: 4.2,
               },
             }}
           >
