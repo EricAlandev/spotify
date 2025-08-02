@@ -6,7 +6,7 @@ const PopUp = () => {
   const toggle = () => setOpen(false);
 
   return (
-    <main className="md:hidden pt-[80px] bg-[#121212] pb-4 flex items-center justify-center">
+    <main className="md:hidden pt-[80px] bg-[#121212]  pb-4 flex items-center justify-center">
         {open && (
           <div 
             className="xs:min-w-[150px] xs:max-w-[150px]  sm:min-w-[360px] bg-[#2A2A2A] text-white p-6 rounded-[25px] "

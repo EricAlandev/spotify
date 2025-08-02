@@ -33,14 +33,6 @@ const BuscarPage = () => {
                             />
                     </Link>
 
-                    {/*trap */}
-                    <Link to={'/Categoria/trap'} className='flex gap-13 md:gap-70 pl-[15px]  items-center bg-[#FFA64D] rounded-[8px] overflow-hidden  md:min-w-[450px] md:min-h-[100px]'>
-                        <h2 className='text-[20px] md:text-[32px] font-[Inter] font-light'>Trap</h2>
-                        <img src={buildUrl("/assets/categorias/Trap.png")} alt=""
-                        className={`rotate-335 ml-[10px] min-h-[65px]`}
-                        />
-                    </Link>
-
                     {/*evangelico */}
                     <Link to={'/Categoria/evangelico'} className='flex gap-2 md:gap-51 pl-[15px] items-center bg-[#F3F3F3] rounded-[8px] overflow-hidden md:min-w-[450px] md:min-h-[100px]'>
                         <h2 className=' text-[black] text-[16px] md:text-[32px] font-[Inter] font-medium md:font-light'>Evangélico</h2>

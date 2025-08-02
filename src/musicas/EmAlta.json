@@ -13,19 +13,6 @@
     "audio": "/musicas/GoldenHour.mp3"
   },
   {
-    "id": "2",
-    "image": "/assets/emAlta/capas/ArtistaG.png",
-    "imageBanda": "/assets/emAlta/bandas/Veigh.webp",
-    "cor": "#214D58",
-    "titulo": "Artista Genérico",
-    "bandaNome": "Veigh",
-    "ano": "2025",
-    "tempo": "2:30",
-    "categoria": "trap",
-    "visualizacoes": "438.721",
-    "audio": "/musicas/GoldenHour.mp3"
-  },
-  {
     "id": "3",
     "image": "/assets/emAlta/capas/SuaCasa.png",
     "imageBanda": "/assets/emAlta/capas/SuaCasa.png",
@@ -49,19 +36,6 @@
     "tempo": "2:55",
     "categoria": "evangelico",
     "visualizacoes": "1.124.580",
-    "audio": "/musicas/GoldenHour.mp3"
-  },
-  {
-    "id": "5",
-    "image": "/assets/emAlta/capas/CHAMPAIN.png",
-    "imageBanda": "/assets/emAlta/bandas/TravisScott.webp",
-    "cor": "#AAA19C",
-    "titulo": "CHAMPAIN & VACAY",
-    "bandaNome": "Travis Scott",
-    "ano": "2025",
-    "tempo": "3:04",
-    "categoria": "trap",
-    "visualizacoes": "1.893.571",
     "audio": "/musicas/GoldenHour.mp3"
   },
   {
@@ -140,45 +114,6 @@
     "tempo": "2:03",
     "categoria": "kpop",
     "visualizacoes": "1.478.231",
-    "audio": "/musicas/GoldenHour.mp3"
-  },
-  {
-    "id": "13",
-    "image": "/assets/emAlta/capas/CHAMPAIN.png",
-    "imageBanda": "/assets/emAlta/bandas/TravisScott.webp",
-    "cor": "#A19894",
-    "titulo": "WHERE WAS YOU",
-    "bandaNome": "Travis Scott",
-    "ano": "2025",
-    "tempo": "2:12",
-    "categoria": "trap",
-    "visualizacoes": "1.375.487",
-    "audio": "/musicas/GoldenHour.mp3"
-  },
-  {
-    "id": "14",
-    "image": "/assets/emAlta/capas/CHAMPAIN.png",
-    "imageBanda": "/assets/emAlta/bandas/TravisScott.webp",
-    "cor": "#A19894",
-    "titulo": "JACKSBOYS 2",
-    "bandaNome": "Travis Scott",
-    "ano": "2025",
-    "tempo": "2:44",
-    "categoria": "trap",
-    "visualizacoes": "1.948.332",
-    "audio": "/musicas/GoldenHour.mp3"
-  },
-  {
-    "id": "15",
-    "image": "/assets/emAlta/capas/CHAMPAIN.png",
-    "imageBanda": "/assets/emAlta/bandas/TravisScott.webp",
-    "cor": "#A19894",
-    "titulo": "DUMBO",
-    "bandaNome": "Travis Scott",
-    "ano": "2025",
-    "tempo": "3:22",
-    "categoria": "trap",
-    "visualizacoes": "1.740.200",
     "audio": "/musicas/GoldenHour.mp3"
   },
   {

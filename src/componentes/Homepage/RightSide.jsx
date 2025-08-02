@@ -6,7 +6,7 @@ import PopUp from '../PopUp'
 const RightSide = () =>{
 
     return(
-        <main className='bg-[#121212] min-w-[445px] '>
+        <main className='bg-[#121212] min-w-[350px] '>
             <PopUp/>
             <MusicaAlta/>
             <ArtistasPopulares/>

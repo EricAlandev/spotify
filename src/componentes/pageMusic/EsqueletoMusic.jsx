@@ -64,7 +64,7 @@ const EsqueletoMusic = () => {
     <div className='flex'>
       <LeftSide/>
 <main>
-<section className=' min-w-[445px] md:min-w-[1500px] md:mx-auto'>
+<section className=' min-w-[350px] md:min-w-[1500px] md:mx-auto'>
         <div>
           <section
             className="pt-[80px] pb-4"
@@ -140,7 +140,12 @@ const EsqueletoMusic = () => {
                       >
                         <div className="h-full">
                           <div className="flex justify-center pt-[190px]">
-                            <img src={buildUrl(musica.image)} alt="" className="max-h-[150px] md:min-h-[165px]" />
+                          <img
+                            src={buildUrl(musica.imageBanda)}
+                            alt={musica.bandaNome}
+                            className="max-h-[170px] min-h-[150px] mb-[15px] rounded-[50%] md:rounded-none"
+                          />
+
                           </div>
 
                           <div className="flex flex-col">
