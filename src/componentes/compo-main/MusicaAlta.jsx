@@ -23,7 +23,7 @@ const MusicaAlta = () => {
           Músicas em Alta
         </h2>
 
-        <section className="max-w-[325px] md:min-w-[1422px]">
+        <section className="max-w-[325px] md:min-w-[1427px]">
           <Swiper
             slidesPerView={2}
             breakpoints={{
