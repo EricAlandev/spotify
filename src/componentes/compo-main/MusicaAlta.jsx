@@ -13,8 +13,8 @@ const MusicaAlta = () => {
   };
 
   return (
-    <main className="md:bg-gradient-to-b md:from-[#212121] md:to-[#121212] md:max-w-[1600px] md:mx-auto">
-      <section className="ml-7 pb-4">
+    <main className=" md:bg-gradient-to-b md:from-[#212121] md:to-[#121212] md:max-w-[1600px] md:mx-auto">
+      <section className="ml-12 md:ml-7 pb-4">
         <h2
           className="mb-4 font-[Inter] font-[500] text-[white] text-[22px] pt-2.5
          md:pt-[100px]

@@ -17,7 +17,7 @@ const BuscarPage = () => {
         <main className="md:flex  h-screen pl-[20px] md:pl-0 bg-[#0D0D0D] relative">
 
                 <LeftSide/>
-            
+    
             
             {/*Se for mobile, ele terá o mt para justamente não ficar para cima demais. */}
             <section className='mr-[16px] md:mt-[80px] md:ml-[100px]'>

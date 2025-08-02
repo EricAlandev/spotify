@@ -3,7 +3,7 @@ import EsqueletoBaixo from "../compo-footer/BaixoEsqueleto"
 const Contato = () => {
 
     return(
-        <main className="pt-[10px] pb-[90px] ">
+        <main className="pt-[10px] pb-[90px] ml-7 ">
             <EsqueletoBaixo
             ti1="Empresa"
             descri1="Sobre"

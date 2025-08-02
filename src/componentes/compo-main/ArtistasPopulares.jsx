@@ -22,7 +22,7 @@ const ArtistasPopulares = () => {
   });
 
   return (
-    <main className="ml-7 pb-4 md:max-w-[1500px] md:mx-auto">
+    <main className="ml-12 md:ml-7 pb-4 md:max-w-[1500px] md:mx-auto">
       <h2
         className="md:ml-7 mb-4 font-[Inter] font-[500] text-[white] text-[22px] mt-2.5"
       >
