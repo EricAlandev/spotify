@@ -29,7 +29,7 @@ const ArtistasPopulares = () => {
         Artistas Populares
       </h2>
 
-      <section className='max-w-[325px] md:min-w-[1452px] '>
+      <section className='max-w-[325px] md:min-w-[1442px] '>
         <Swiper 
            slidesPerView={2}
 
