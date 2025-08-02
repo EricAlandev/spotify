@@ -52,7 +52,7 @@ const Footer = () => {
           </>
 
           {popUpBiblioteca && (
-                <div className="absolute bottom-20 z-50 right-[-99px] w-[95vw] min-w-[240px] max-w-[400px]
+                <div className="absolute bottom-20 z-50 right-[-115px] w-[95vw] min-w-[240px] max-w-[400px]
                   p-4 bg-[#4687D6] rounded-[12px]
                 ">
                       <h2 className="mb-2 ml-2 text-[white] text-[16px] font-bold">
