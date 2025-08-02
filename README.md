@@ -2,10 +2,6 @@
 
 Este projeto é uma cópia funcional do Spotify desenvolvida com React. Ele permite navegar por artistas e músicas, tocar faixas, explorar categorias e interagir com uma interface moderna e responsiva — tudo inspirado na experiência do Spotify.
 
-## 🚀 Demonstração
-
-*(Adicione aqui prints ou GIFs do seu projeto caso queira)*
-
 ## 📌 Funcionalidades
 
 - Exibição de músicas e artistas em destaque
